@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Form } from "semantic-ui-react";
+import React, { Component } from 'react';
+import { Form } from 'semantic-ui-react';
 
 class Search extends Component {
   render() {
@@ -7,12 +7,11 @@ class Search extends Component {
       <Form onSubmit={this.props.filterSearchTerm}>
         <Form.Input
           fluid
-          size="large"
-          icon="search"
           label="Type here to Search for a Title"
           placeholder="Enter search text"
           onChange={this.props.updateSearchTerm}
         />
+        <br />
       </Form>
     );
   }
